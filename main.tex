@@ -149,22 +149,22 @@ x_p(t)=X\sin(\omega_rt-\theta)
 	\label{eq:teta}
 \end{equation}
 \section{Resultados}
-\begin{images}[\label{imagenmultiple}]{Ejemplo de imagen múltiple.}
-	\addimage{frecuencias3.png}{width=7cm}{Tranformada de Fourier para experimento 1}
-	\addimage{frecuencias3-5.png}{width=7cm}{Transformada de Fourier para experimento}
-	\addimage{frecuencias4.png}{width=7cm}{Transformada de Fourier para experimento 3}
-	\addimage{frecuencias4-5.png}{width=7cm}{Transformada de Fourier para experimento 3}
-	\addimage{frecuencias5.png}{width=7cm}{Transformada de Fourier para experimento 3}
-	\addimage{frecuencias5-5.png}{width=7cm}{Transformada de Fourier para experimento 3}
+\begin{images}[\label{fig:1}]{Análisis en frecuencia de respuesta del sistema.}
+	\addimage{frecuencias3.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 3 Hz}
+	\addimage{frecuencias3-5.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 3,5 Hz}
+	\addimage{frecuencias4.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 4 Hz}
+	\addimage{frecuencias4-5.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 4,5 Hz}
+	\addimage{frecuencias5.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 5 Hz}
+	\addimage{frecuencias5-5.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 5,5 Hz}
 \end{images}
 
 \newpage
-\begin{images}[\label{imagenmultiple}]{Ejemplo de imagen múltiple.}
-\addimage{frecuencias6.png}{width=7cm}{Transformada de Fourier para experimento 3}
-\addimage{frecuencias6-5.png}{width=7cm}{Transformada de Fourier para experimento 3}
-\addimage{frecuencias7.png}{width=7cm}{Transformada de Fourier para experimento 3}
+\begin{images}[\label{fig:2}]{Análisis en frecuencia de respuesta del sistema.}
+\addimage{frecuencias6.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 6 Hz}
+\addimage{frecuencias6-5.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 6,5 Hz}
+\addimage{frecuencias7.png}{width=7cm}{Transformada de Fourier para experimento con velocidad de motor 7 Hz}
 \end{images}
-\begin{images}[\label{imagenmultiple}]{Ejemplo de imagen múltiple.}
+\begin{images}[\label{fig:3}]{Respuestas para casos especiales.}
 	\addimage{respuesta5.png}{width=7cm}{Transformada de Fourier para experimento 3}
 	\addimage{respuesta6.png}{width=7cm}{Transformada de Fourier para experimento 3}
 \end{images}
@@ -185,5 +185,9 @@ x_p(t)=X\sin(\omega_rt-\theta)
 En la Tabla \ref{tab:ffff} se aprecia que los resultados experimentales son cercanos a los predichos por la teoría.  Sin embargo, se observa que para las velocidades bajas el error de predicción es menor que para las velocidades altas.
 
 Se observa que la resonancia ocurre cerca de los $5 Hz$ lo que se corresponde al cálculo teórico de la frecuencia natural del sistema $w_n=31.8468 \frac{rad}{s}$ lo que es equivalente a $5.0686 Hz$.  Sin embargo, la aceleración predicha es casi el doble a la obtenida experimentalmente.  Esto se explica por varios factores: la existencia de errores en el montaje del sistema, la existencia de roce que disipa energía, errores del acelerómetro y el hecho de que en el modelo teórico se asume que el sistema se encuentra en régimen permanente. 
+
+En el gráfico de la Figura \ref{fig:2} (a) se aprecia que no fue posible obtener la amplitud para el experimento realizado con una frecuencia de revolución de motor igual a 6 Hz. Esto se puede entender si es que se revisa la Figura \ref{fig:3} (b) en donde se presenta la respuesta temporal.  Este gráfico muestra una señal ruidosa en donde no es posible observar un periodo. Tal suceso puede explicarse por un defecto en el sensor o un consumo irregular del motor eléctrico del elemento forzante.
+
+Un resultado interesante se puede ver en los gráficos de las Figuras \ref{fig:1} (a)(c) y (d). Existe un {\it peak} claro con una frecuencia mayor a $250 Hz$, valor que claramente se aleja de la velocidad del motor.  Esta aceleración puede corresponder a uno de los modos de vibración de la barra rígida que en la realidad no es perfectamente rígida por lo que sufre deformaciones elásticas. Un golpe pudo haber provocado que la barra vibrara a una alta frecuencia que pudo ser registrada por el acelerómetro.
 % FIN DEL DOCUMENTO
 \end{document}
